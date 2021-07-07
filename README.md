@@ -29,6 +29,6 @@ sudo yum install wget
 
 ### Change VM Swappiness permanently
 ```
-sudo vi /etc/sysctl.conf
+sudo vi /etc/sysctl.conf <=add vm.swappiness=1
 ```
 ![image](https://user-images.githubusercontent.com/52474199/124742257-7e5b6600-df57-11eb-89ca-7836bbdfc72b.png)
