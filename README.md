@@ -79,3 +79,12 @@ $ cat /sys/kernel/mm/transparent_hugepage/enabled
 $ cat /sys/kernel/mm/transparent_hugepage/defrag
 ```
 ![image](https://user-images.githubusercontent.com/52474199/124745838-31798e80-df5b-11eb-949c-356d1ee93b91.png)
+
+
+### 5. List your network interface configuration
+```
+$ ifconfig -a
+```
+![image](https://user-images.githubusercontent.com/52474199/124746059-6d145880-df5b-11eb-8979-53395de73852.png)
+
+
