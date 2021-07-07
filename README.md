@@ -48,6 +48,6 @@ add ->
 echo "never" > /sys/kernel/mm/transparent_hugepage/enabled
 echo "never" > /sys/kernel/mm/transparent_hugepage/defrag
 ```
-
+![image](https://user-images.githubusercontent.com/52474199/124743726-faa27900-df58-11eb-9d0e-fb311c1c7279.png)
 
 
