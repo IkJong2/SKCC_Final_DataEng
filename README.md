@@ -50,4 +50,18 @@ echo "never" > /sys/kernel/mm/transparent_hugepage/defrag
 ```
 ![image](https://user-images.githubusercontent.com/52474199/124743726-faa27900-df58-11eb-9d0e-fb311c1c7279.png)
 
-
+```
+sudo chmod +x /etc/rc.d/rc.local
+```
+```
+sudo vi /etc/default/grub
+ add -> transparent_hugepage=never (on line GRUB_CMDLINE_LINUX )
+ ```
+ ```
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+sudo systemctl start tuned
+sudo tuned-adm off
+sudo tuned-adm list
+sudo systemctl stop tuned
+sudo systemctl disable tuned
+```
