@@ -1,13 +1,10 @@
-3.34.216.162	10.0.0.145	util1.com util
+sudo hostnamectl set-hostname util.com
+sudo hostnamectl set-hostname mn.com
+sudo hostnamectl set-hostname dn1.com
+sudo hostnamectl set-hostname dn2.com
+sudo hostnamectl set-hostname dn3.com
 
-52.79.154.137	10.0.0.157	mn.com mn
-
-3.34.6.203	10.0.0.19 		dn1.com dn1
-
-3.34.68.165	10.0.0.158 	dn2.com dn2
-
-3.34.75.86	10.0.0.159 	dn3.com dn3
-
+# Final Exam
 ## 1. Create a CDH Cluster on AWS
 
 ### a. Linux setup
@@ -29,3 +26,9 @@ CDH version 5.15.2
 ```
 sudo yum install wget
 ```
+
+### Change VM Swappiness permanently
+```
+sudo vi /etc/sysctl.conf
+```
+![image](https://user-images.githubusercontent.com/52474199/124742257-7e5b6600-df57-11eb-89ca-7836bbdfc72b.png)
