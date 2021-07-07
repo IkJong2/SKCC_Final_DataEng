@@ -57,7 +57,9 @@ sudo chmod +x /etc/rc.d/rc.local
 sudo vi /etc/default/grub
  add -> transparent_hugepage=never (on line GRUB_CMDLINE_LINUX )
  ```
- ```
+![image](https://user-images.githubusercontent.com/52474199/124744484-c5e2f180-df59-11eb-9f7a-537bc734e38e.png)
+
+```
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 sudo systemctl start tuned
 sudo tuned-adm off
