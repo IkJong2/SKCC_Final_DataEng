@@ -61,6 +61,10 @@ sudo vi /etc/default/grub
 
 ```
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+![image](https://user-images.githubusercontent.com/52474199/124745041-56213680-df5a-11eb-9ec3-521fb023c4eb.png)
+
+```
 sudo systemctl start tuned
 sudo tuned-adm off
 sudo tuned-adm list
