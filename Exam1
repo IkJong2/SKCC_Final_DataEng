@@ -523,4 +523,3 @@ sqoop export \
 --export-dir hdfs://mn.com/user/training/results
 ```
 ![](/img/1-83.PNG)
-
