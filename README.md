@@ -71,3 +71,11 @@ sudo tuned-adm list
 sudo systemctl stop tuned
 sudo systemctl disable tuned
 ```
+### 확인
+```
+$ cat /sys/kernel/mm/transparent_hugepage/enabled
+```
+```
+$ cat /sys/kernel/mm/transparent_hugepage/defrag
+```
+![image](https://user-images.githubusercontent.com/52474199/124745838-31798e80-df5b-11eb-949c-356d1ee93b91.png)
