@@ -101,6 +101,7 @@ sudo vi /etc/hosts
 ```
 sudo hostnamectl set-hostname m1
 ```
+```
 $ getent hosts cm1
 $ getent hosts 172.31.2.32
 ```
