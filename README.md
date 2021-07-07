@@ -87,4 +87,36 @@ $ ifconfig -a
 ```
 ![image](https://user-images.githubusercontent.com/52474199/124746059-6d145880-df5b-11eb-8979-53395de73852.png)
 
+### 6. Show that forward and reverse host lookups are correctly resolved
+```
+sudo vi /etc/hosts
+```
+```
+10.0.0.101 util.com util
+10.0.0.102 mn.com mn
+10.0.0.103 dn1.com dn1
+10.0.0.233 dn2.com dn2
+10.0.0.129 dn3.com dn3
+```
+```
+sudo hostnamectl set-hostname m1
+```
+$ getent hosts cm1
+$ getent hosts 172.31.2.32
+```
+
+### 7. Show the nscd service is running
+```
+$ sudo systemctl status nscd
+```
+### 8. Show the ntpd service is running
+```
+$ sudo systemctl status ntp
+```
+
+### Disable IPV6
+```
+$ sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+$ sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
+```
 
