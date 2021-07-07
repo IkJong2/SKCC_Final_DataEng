@@ -32,3 +32,22 @@ sudo yum install wget
 sudo vi /etc/sysctl.conf <=add vm.swappiness=1
 ```
 ![image](https://user-images.githubusercontent.com/52474199/124742257-7e5b6600-df57-11eb-89ca-7836bbdfc72b.png)
+
+### 3. Show the mount attributes of your volume(s)
+```
+$ cat /proc/mounts
+$ cat /etc/fstab
+```
+![image](https://user-images.githubusercontent.com/52474199/124742812-0b062400-df58-11eb-8593-d1310d631f17.png)
+![image](https://user-images.githubusercontent.com/52474199/124743022-43a5fd80-df58-11eb-9a19-21f7f1ffd910.png)
+
+### 4. Disable Transparent Hugepage Support
+```
+sudo vi /etc/rc.d/rc.local
+add ->
+echo "never" > /sys/kernel/mm/transparent_hugepage/enabled
+echo "never" > /sys/kernel/mm/transparent_hugepage/defrag
+```
+
+
+
